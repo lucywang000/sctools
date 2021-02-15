@@ -1,0 +1,129 @@
+.x-h-48px {
+  min-height: 48px;
+}
+
+.x-h-64px {
+  min-height: 64px;
+}
+
+.x-ml-240px {
+  margin-left: 240px;
+}
+
+html,
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  /* overflow: hidden; */
+}
+
+html {
+  overflow: hidden;
+}
+
+.x-drawer {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-right-width: 1px;
+  width: 240px;
+}
+
+.x-main-area {
+  width: calc(100% - 240px);
+}
+
+@media (max-width: 767px) {
+  .x-drawer {
+    z-index: 10;
+    left: -240px
+  }
+    .x-drawer.x-drawer-open {
+      left: 0;
+    }
+
+  .x-main-area {
+    width: 100%
+  }
+    .x-main-area.x-drawer-open {
+      margin-left: 240px;
+    }
+}
+
+.x-link-selected {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity)) !important;
+}
+
+/* .MuiToolbar-gutters { */
+
+/*     @apply px-8 !important; */
+
+/* } */
+
+#leftbar-mask-container {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+#leftbar-mask-container #leftbar-mask {
+    border-right-width: 1px;
+    height: 100%;
+    width: 240px;
+    /* border: 1px solid red; */
+    background-color: white;
+  }
+
+.dev.top-container {
+    /* height: 30vh; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* overflow: scroll; */
+    /* overflow: visible; */
+    /* overflow-x: auto; */
+    /* overflow: auto; */
+    /* @apply relative; */
+    position: absolute;
+    /* @apply flex flex-col; */
+    height: 100%;
+    width: 100%;
+    /* width: 500px; */
+    /* height: 500px; */
+  }
+
+.dev .header {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+    border-radius: 0.25rem;
+    border-width: 1px;
+  }
+
+.dev .direct-container {
+    /* height: 10vh; */
+    /* overflow: visible; */
+    overflow: scroll;
+    height: 100%;
+    /* @apply w-full; */
+  }
+
+.dev .line {
+    white-space: nowrap;
+  }
+
+@media (min-width: 768px) {
+
+  .md\:x-h-64px {
+    min-height: 64px;
+  }
+
+  .md\:x-ml-240px {
+    margin-left: 240px;
+  }
+}
